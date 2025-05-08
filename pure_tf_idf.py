@@ -12,7 +12,7 @@ perfume_data = {
 
 # Step 1: Convert the perfume descriptions into TF-IDF vectors.
 #TfidfVectorizer class is used to convert the perfume descriptions into TF-IDF vectors.
-# This vector represents the importance of each word
+# 
 vectorizer = TfidfVectorizer(stop_words="english")
 tfidf_matrix = vectorizer.fit_transform(perfume_data.values())
 
